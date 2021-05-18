@@ -1,0 +1,6 @@
+make.exe helloWord.o --dry-run --keep-going --print-directory
+"make.exe": Entering directory `/c/Users/Jacky/Desktop/Side Project/Leetcode'
+gcc    -c -o helloWord.o helloWord.c
+ 
+"make.exe": Leaving directory `/c/Users/Jacky/Desktop/Side Project/Leetcode'
+ 
