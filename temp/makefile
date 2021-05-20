@@ -1,5 +1,5 @@
 CC = gcc
-
+FLAG = -std=c99
 UP_DIR = ../
 
 MAIN_C = ${wildcard $(UP_DIR)mainTest.c}
@@ -26,14 +26,15 @@ all: mainTest
 	
 
 mainTest:$(NOW_OBJ)
-	$(CC) -o $(PATH_TARGET) $(NOW_OBJ)
+	$(CC) $(FLAG)  -o $(PATH_TARGET) $(NOW_OBJ)
 
 $(NOW_O):$(NOW_C) $(MAIN_H)
-	$(CC) -c $(NOW_C)
+	$(CC) $(FLAG) -c $(NOW_C)
 
 $(MAIN_O):$(MAIN_C) $(MAIN_H)
-	$(CC) -c $(MAIN_C) -o $(MAIN_O)
+	$(CC) $(FLAG) -c $(MAIN_C) -o $(MAIN_O)
 
 
 clean:
 	rm -f $(UP_DIR)*.o $(UP_DIR)*.exe
+

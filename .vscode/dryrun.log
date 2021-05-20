@@ -1,6 +1,7 @@
-make.exe helloWord.o --dry-run --keep-going --print-directory
-"make.exe": Entering directory `/c/Users/Jacky/Desktop/Side Project/Leetcode'
-gcc    -c -o helloWord.o helloWord.c
+make.exe --dry-run --keep-going --print-directory
+"make.exe": Entering directory `/c/Users/Jacky/Desktop/Project/LeetCode'
  
-"make.exe": Leaving directory `/c/Users/Jacky/Desktop/Side Project/Leetcode'
+"make.exe": *** No rule to make target `helloWord.c', needed by `helloWord.o'.
+ 
+"make.exe": Leaving directory `/c/Users/Jacky/Desktop/Project/LeetCode'
  

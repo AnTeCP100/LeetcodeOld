@@ -6,8 +6,11 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # PARTICULAR PURPOSE.
 
 # This program built for i686-pc-msys
+ 
+"make.exe": *** No rule to make target `helloWord.c', needed by `helloWord.o'.  Stop.
+ 
 
-# Make data base, printed on Tue May 18 11:14:36 2021
+# Make data base, printed on Thu May 20 21:38:25 2021
 
 # Variables
 
@@ -30,9 +33,10 @@ HOMEDRIVE = C:
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # makefile
-CURDIR := /c/Users/Jacky/Desktop/Side Project/Leetcode
+CURDIR := /c/Users/Jacky/Desktop/Project/LeetCode
 # default
 SHELL := /bin/sh
+ 
 # environment
 WINDIR = C:\WINDOWS
 # environment
@@ -42,11 +46,9 @@ PYCHARM COMMUNITY EDITION = C:\Program Files\JetBrains\PyCharm Community Edition
 # environment
 ONEDRIVE = C:\Users\Jacky\OneDrive
 # environment
-PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.RB;.RBW
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 # makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
-# environment
-FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
 VSCODE_NODE_CACHED_DATA_DIR = C:\Users\Jacky\AppData\Roaming\Code\CachedData\054a9295330880ed74ceaedda236253b4f39a335
 # environment
@@ -58,45 +60,39 @@ PROGRAMW6432 = C:\Program Files
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-fd4376e6-7f53-48e7-be02-6633795681b6-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-825b5e6d-8d76-4d75-8c8d-376ac72aab96-sock
 # environment
 VSCODE_CWD = C:\Users\Jacky\AppData\Local\Programs\Microsoft VS Code
 # environment
-PATH = /c/Program Files (x86)/Razer/ChromaBroadcast/bin:/c/Program Files/Razer/ChromaBroadcast/bin:/c/Python38/Scripts/:/c/Python38/:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0/:/c/Windows/System32/OpenSSH/:/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/c/Program Files/dotnet/:/c/Program Files/Microsoft SQL Server/130/Tools/Binn/:/c/Program Files/TortoiseSVN/bin:/c/Users/Jacky/AppData/Local/Android/Sdk/tools:/c/Users/Jacky/AppData/Local/Android/Sdk/platform-tools:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/c/WINDOWS/System32/OpenSSH/:/c/Program Files (x86)/Microsoft SQL Server/100/Tools/Binn/:/c/Program Files/Microsoft SQL Server/100/Tools/Binn/:/c/Program Files/Microsoft SQL Server/100/DTS/Binn/:/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/c/Program Files (x86)/Calibre2/:/c/Program Files (x86)/VanDyke Software/Clients/:/c/Program Files/PuTTY/:/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/c/Program Files/CMake/bin:/c/Program Files/VanDyke Software/ClientPack/:/mingw/bin:/c/ProgramData/chocolatey/bin:/c/Users/Jacky/AppData/Local/Microsoft/WindowsApps:/c/Users/Jacky/.dotnet/tools:/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/c/Strawberry/c/bin:/c/Strawberry/perl/site/bin:/c/Strawberry/perl/bin:/c/Program Files/Git/cmd:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/c/WINDOWS/System32/OpenSSH/:/c/Program Files/nodejs/:/c/Program Files/LLVM/bin:/c/Ruby27-x64/bin:/c/Program Files/MySQL/MySQL Shell 8.0/bin/:/c/Users/Jacky/AppData/Local/GitHubDesktop/bin:/c/Users/Jacky/AppData/Local/Programs/Microsoft VS Code/bin:/c/Program Files/Bandizip/:/c/Program Files/heroku/bin:/c/Users/Jacky/AppData/Roaming/npm:/usr/bin
+PATH = /c/Program Files (x86)/Common Files/Oracle/Java/javapath:/c/Program Files/Common Files/Oracle/Java/javapath:/c/Program Files (x86)/Razer Chroma SDK/bin:/c/Program Files/Razer Chroma SDK/bin:/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/c/Program Files/Razer/ChromaBroadcast/bin:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/c/WINDOWS/System32/OpenSSH/:/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/c/Program Files/Microsoft SQL Server/130/Tools/Binn/:/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/c/Users/Jacky/AppData/Local/Programs/Python/Python38-32/Scripts:/c/Users/Jacky/AppData/Local/Programs/Python/Python38-32/:/c/Strawberry/c/bin:/c/Strawberry/perl/site/bin:/c/Strawberry/perl/bin:/c/Users/Jacky/AppData/Local/Microsoft/WindowsApps:/c/Program Files/Bandizip/:/c/Users/Jacky/AppData/Local/Programs/Microsoft VS Code/bin:/c/Users/Jacky/AppData/Roaming/npm:/c/Program Files/Git/cmd:/c/Program Files/nodejs/:/mingw/bin:/c/Program Files/dotnet/:/c/Program Files/PuTTY/:/usr/bin:/c/Users/Jacky/AppData/Local/Microsoft/WindowsApps:/c/Program Files/Bandizip/:/c/Users/Jacky/AppData/Local/Programs/Microsoft VS Code/bin:/c/Users/Jacky/Desktop/ASP:/c/Users/Jacky/AppData/Local/GitHubDesktop/bin:/c/Program Files/JetBrains/PyCharm Community Edition 2020.2.3/bin:.:/c/Users/Jacky/AppData/Roaming/npm:/c/Program Files/JetBrains/IntelliJ IDEA 2021.1.1/bin:.:/c/Program Files/LLVM/bin:/c/Users/Jacky/.dotnet/tools
 # environment
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
-# environment
-ZES_ENABLE_SYSMAN = 1
-# environment
-CHOCOLATEYLASTPATHUPDATE = 132365069688856330
 # environment
 PROCESSOR_ARCHITECTURE = x86
 # environment
 USERPROFILE = C:\Users\Jacky
 # environment
-CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
-# environment
-RUBYOPT = -Eutf-8
-# environment
-!C: = c:\Users\Jacky\Desktop\Side Project\Leetcode
+!C: = c:\Users\Jacky\Desktop\Project\LeetCode
 # environment
 ALLUSERSPROFILE = C:\ProgramData
 # environment
 VSCODE_LOG_STACK = false
 # environment
-NUMBER_OF_PROCESSORS = 12
+NUMBER_OF_PROCESSORS = 6
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+INTELLIJ IDEA = C:\Program Files\JetBrains\IntelliJ IDEA 2021.1.1\bin;
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_18988_EVKCSFGXUZICQVMD
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_12756_ETHYJXQBKLYPROZM
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-COMPUTERNAME = T00T-NB
+COMPUTERNAME = DESKTOP-N1GBH82
 # environment
 PROGRAMFILES = C:\Program Files (x86)
 # environment
@@ -114,13 +110,11 @@ APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
 COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
 # environment
-LOGONSERVER = \\T00T-NB
-# environment
-ONEDRIVECONSUMER = C:\Users\Jacky\OneDrive
+LOGONSERVER = \\DESKTOP-N1GBH82
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # environment
-USERDOMAIN = T00T-NB
+USERDOMAIN = DESKTOP-N1GBH82
 # default
 MAKE = $(MAKE_COMMAND)
 # default
@@ -130,9 +124,6 @@ CC = gcc
 # default
 MAKE_VERSION := 3.81
 # makefile
- 
-"make.exe": *** No rule to make target `helloWord.o', needed by `helloWord'.  Stop.
- 
 .DEFAULT_GOAL := all
 # environment
 PROGRAMFILES(X86) = C:\Program Files (x86)
@@ -141,13 +132,11 @@ PROGRAMFILES(X86) = C:\Program Files (x86)
 # environment
 LOCALAPPDATA = C:\Users\Jacky\AppData\Local
 # environment
-PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+PSMODULEPATH = C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\
 # default
 MAKE_COMMAND := "make.exe"
 # environment
 PROCESSOR_ARCHITEW6432 = AMD64
-# environment
-VS150COMCOMNTOOLS = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\
 # default
 .VARIABLES := 
 # automatic
@@ -177,8 +166,6 @@ SYSTEMROOT = C:\WINDOWS
 # environment
 APPDATA = C:\Users\Jacky\AppData\Roaming
 # environment
-__COMPAT_LAYER = RunAsAdmin
-# environment
 TEMP = /tmp
 # environment
 COMSPEC = C:\WINDOWS\system32\cmd.exe
@@ -186,8 +173,6 @@ COMSPEC = C:\WINDOWS\system32\cmd.exe
 MAKEFILES := 
 # automatic
 <F = $(notdir $<)
-# environment
-VS160COMCOMNTOOLS = C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\
 # environment
 LC_ALL = C
 # automatic
@@ -197,11 +182,9 @@ SUFFIXES :=
 # environment
 SYSTEMDRIVE = C:
 # environment
-PROCESSOR_REVISION = 9e0a
+SESSIONNAME = Console
 # environment
-PYCHARM = C:\Program Files\JetBrains\PyCharm 2020.1.2\bin;
-# default
-.INCLUDE_DIRS = /usr/include /usr/include
+PROCESSOR_REVISION = 9e0a
 # environment
 MAKELEVEL := 0
 # environment
@@ -211,23 +194,22 @@ PROCESSOR_LEVEL = 6
 # environment
 TERM = cygwin
 # environment
-FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+VSCODE_PID = 12756
 # environment
-VSCODE_PID = 18988
-# environment
-USERDOMAIN_ROAMINGPROFILE = T00T-NB
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-N1GBH82
 # variable set hash-table stats:
-# Load=101/1024=10%, Rehash=0, Collisions=10/126=8%
+# Load=91/1024=9%, Rehash=0, Collisions=9/113=8%
 
 # Pattern-specific Variable Values
 
 # No pattern-specific variable values.
+ 
 
 # Directories
 
-# . (device -24473, inode 7883505): 9 files, no impossibilities.
+# . (device -8660, inode 61529665): 17 files, no impossibilities.
 
-# 9 files, no impossibilities in 1 directories.
+# 17 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -253,12 +235,13 @@ all: helloWord
 Makefile:
 #  Implicit rule search has been done.
  
-#  Last modified 2021-05-18 11:14:33
+#  Last modified 2021-05-20 20:08:41
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+ 
 helloWord: helloWord.o
 #  Implicit rule search has not been done.
 #  File does not exist.
@@ -266,16 +249,18 @@ helloWord: helloWord.o
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 #  commands to execute (from `Makefile', line 4):
-	$(CC) -o $@ $< 
+	@$(CC) -o $@ $< 
 	
 
-# Not a target:
-helloWord.o:
-#  Implicit rule search has been done.
+helloWord.o: helloWord.c
+#  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 6):
+	@$(CC) -o helloWord.o -c helloWord.c	 	
+	
 
 # Not a target:
 .DEFAULT:
@@ -287,12 +272,20 @@ clean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 7):
-	rm -f *.o *.exe
+#  commands to execute (from `Makefile', line 9):
+	@rm -f *.o *.exe
 	
 
+# Not a target:
+helloWord.c:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
 # files hash-table stats:
-# Load=7/1024=1%, Rehash=0, Collisions=1/21=5%
+# Load=8/1024=1%, Rehash=0, Collisions=1/23=4%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -304,6 +297,6 @@ clean:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Tue May 18 11:14:36 2021
+# Finished Make data base on Thu May 20 21:38:25 2021
 
  
