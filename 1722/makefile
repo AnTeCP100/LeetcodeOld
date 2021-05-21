@@ -1,6 +1,5 @@
 CC = gcc
 FLAG = -std=c99
-
 UP_DIR = ../
 
 MAIN_C = ${wildcard $(UP_DIR)mainTest.c}
@@ -38,3 +37,4 @@ $(MAIN_O):$(MAIN_C) $(MAIN_H)
 
 clean:
 	rm -f $(UP_DIR)*.o $(UP_DIR)*.exe
+

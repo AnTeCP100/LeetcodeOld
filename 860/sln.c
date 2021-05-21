@@ -1,8 +1,13 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <string.h>
-
 #include "../method.h"
+
+//Wallet   [0], [1], [2]
+//Wallet    5,  10,  15  (define)
+//if customer give 5 => wallet[0] +1  => give 10 wallet[0]-1, wallet[1]+1
+//if there deos not have enough money in wallet retrun false
+
 bool lemonadeChange(int* bills, int billsSize){
     bool result = true;
     //5,10,15

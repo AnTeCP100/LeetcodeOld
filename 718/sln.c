@@ -4,6 +4,7 @@
 #include "../method.h"
 
 
+
 void swap(int *p1,int*p2){
     int tmp = *p1;
     *p1=*p2;
@@ -17,10 +18,10 @@ int findLength(int* nums1, int nums1Size, int* nums2, int nums2Size){
         swap(&nums1Size,&nums2Size);      
     }
     
-    printf("nums1Size :%d\n",nums1Size);
-    printf("nums2Size :%d\n",nums2Size);
-    printf("nums1 :%d\n",nums1[0]);
-    printf("nums2 :%d\n",nums2[0]);
+    //printf("nums1Size :%d\n",nums1Size);
+    //printf("nums2Size :%d\n",nums2Size);
+    //printf("nums1 :%d\n",nums1[0]);
+    //printf("nums2 :%d\n",nums2[0]);
     int *dp = calloc((nums2Size+1),sizeof(int));
     int result = 0;
     for (int i = 1; i <= nums1Size; ++i)
