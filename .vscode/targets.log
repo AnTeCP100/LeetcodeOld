@@ -10,7 +10,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 "make.exe": *** No rule to make target `helloWord.c', needed by `helloWord.o'.  Stop.
  
 
-# Make data base, printed on Thu May 20 21:38:25 2021
+# Make data base, printed on Sun May 23 23:36:07 2021
 
 # Variables
 
@@ -36,7 +36,6 @@ HOMEDRIVE = C:
 CURDIR := /c/Users/Jacky/Desktop/Project/LeetCode
 # default
 SHELL := /bin/sh
- 
 # environment
 WINDIR = C:\WINDOWS
 # environment
@@ -50,6 +49,8 @@ PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 # makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# environment
 VSCODE_NODE_CACHED_DATA_DIR = C:\Users\Jacky\AppData\Roaming\Code\CachedData\054a9295330880ed74ceaedda236253b4f39a335
 # environment
 TMP = /tmp
@@ -60,7 +61,7 @@ PROGRAMW6432 = C:\Program Files
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-825b5e6d-8d76-4d75-8c8d-376ac72aab96-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-8a943cc1-d043-430c-9084-c321fa5d5bbc-sock
 # environment
 VSCODE_CWD = C:\Users\Jacky\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -88,7 +89,7 @@ INTELLIJ IDEA = C:\Program Files\JetBrains\IntelliJ IDEA 2021.1.1\bin;
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_12756_ETHYJXQBKLYPROZM
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_9496_KGXMVARTRYWBWSYQ
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -194,22 +195,23 @@ PROCESSOR_LEVEL = 6
 # environment
 TERM = cygwin
 # environment
-VSCODE_PID = 12756
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# environment
+VSCODE_PID = 9496
 # environment
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-N1GBH82
 # variable set hash-table stats:
-# Load=91/1024=9%, Rehash=0, Collisions=9/113=8%
+# Load=93/1024=9%, Rehash=0, Collisions=9/115=8%
 
 # Pattern-specific Variable Values
 
 # No pattern-specific variable values.
- 
 
 # Directories
 
-# . (device -8660, inode 61529665): 17 files, no impossibilities.
+# . (device -8660, inode 61529665): 20 files, no impossibilities.
 
-# 17 files, no impossibilities in 1 directories.
+# 20 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -234,14 +236,12 @@ all: helloWord
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
- 
 #  Last modified 2021-05-20 20:08:41
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
- 
 helloWord: helloWord.o
 #  Implicit rule search has not been done.
 #  File does not exist.
@@ -297,6 +297,6 @@ helloWord.c:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Thu May 20 21:38:25 2021
+# Finished Make data base on Sun May 23 23:36:07 2021
 
  
