@@ -1,3 +1,5 @@
+// (2n)!/(2^n)
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "../method.h"
