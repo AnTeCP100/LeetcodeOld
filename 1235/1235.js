@@ -1,28 +1,20 @@
 var jobScheduling = function(startTime, endTime, profit) {
-    var newList=[]
-    startTime.forEach(ele,index => {
-        newList[index] = [ele,endTime[index],endTime[profit]]
-    });
-
-    var st =Math.min(startTime);
-    var ed = Math.max(endTime);
-
-    var resultList = 0;
-    
-    var item = newList.shift();
-
-    var nowitemCount = 0;
-
-    var value = [];
-    
-    for(var i = st;i<=ed;i++){
-        if(item[2]==i){
-            if(value.length>0){
-
-            }else{
-                value[nowitemCount]  = item[2]/(item[1]-item[0])
-            }
-            
-        }
+    var dataArr =[];
+    for(var i = 0;i<startTime.length;i++){
+        dataArr[i]=[startTime[i],endTime[i],profit[i]];
     }
+    var valueArr=[]
+
+    for(var i = 0;i<startTime.length;i++){
+        valueArr[i]=profit[i]/(endTime[i]-startTime[i])
+    }
+    
+    var Time_Start = Math.min(startTime);
+    var Time_End = Math.min(endTime);
+    var nowTime =1;
+
+    var worKList = dataArr.slice();
+    var work = worKList.shift();
+
+
 };

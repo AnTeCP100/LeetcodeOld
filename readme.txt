@@ -1,4 +1,0 @@
-folder: number
-	js
-	c
-	
