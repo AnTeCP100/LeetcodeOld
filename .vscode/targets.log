@@ -10,7 +10,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 "make.exe": *** No rule to make target `helloWord.c', needed by `helloWord.o'.  Stop.
  
 
-# Make data base, printed on Fri May 28 23:21:06 2021
+# Make data base, printed on Tue Jun  1 06:09:50 2021
 
 # Variables
 
@@ -22,6 +22,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 MAKEFLAGS = Rrqp
 # environment
 VSCODE_LOG_NATIVE = false
+ 
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -49,8 +50,6 @@ PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 # makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # environment
-FPS_BROWSER_USER_PROFILE_STRING = Default
-# environment
 VSCODE_NODE_CACHED_DATA_DIR = C:\Users\Jacky\AppData\Roaming\Code\CachedData\054a9295330880ed74ceaedda236253b4f39a335
 # environment
 TMP = /tmp
@@ -61,9 +60,9 @@ PROGRAMW6432 = C:\Program Files
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-15c19dd7-1a1d-43ce-a34b-47ecd8ea08e7-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-5e5ae3c7-1e5d-4986-975d-084ffa5e8345-sock
 # environment
-VSCODE_CWD = C:\WINDOWS\System32
+VSCODE_CWD = C:\Users\Jacky\AppData\Local\Programs\Microsoft VS Code
 # environment
 PATH = /c/Program Files (x86)/Common Files/Oracle/Java/javapath:/c/Program Files/Common Files/Oracle/Java/javapath:/c/Program Files (x86)/Razer Chroma SDK/bin:/c/Program Files/Razer Chroma SDK/bin:/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/c/Program Files/Razer/ChromaBroadcast/bin:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/c/WINDOWS/System32/OpenSSH/:/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/c/Program Files/Microsoft SQL Server/130/Tools/Binn/:/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/c/Users/Jacky/AppData/Local/Programs/Python/Python38-32/Scripts:/c/Users/Jacky/AppData/Local/Programs/Python/Python38-32/:/c/Strawberry/c/bin:/c/Strawberry/perl/site/bin:/c/Strawberry/perl/bin:/c/Users/Jacky/AppData/Local/Microsoft/WindowsApps:/c/Program Files/Bandizip/:/c/Users/Jacky/AppData/Local/Programs/Microsoft VS Code/bin:/c/Users/Jacky/AppData/Roaming/npm:/c/Program Files/Git/cmd:/c/Program Files/nodejs/:/mingw/bin:/c/Program Files/dotnet/:/c/Program Files/PuTTY/:/usr/bin:/c/Users/Jacky/AppData/Local/Microsoft/WindowsApps:/c/Program Files/Bandizip/:/c/Users/Jacky/AppData/Local/Programs/Microsoft VS Code/bin:/c/Users/Jacky/Desktop/ASP:/c/Users/Jacky/AppData/Local/GitHubDesktop/bin:/c/Program Files/JetBrains/PyCharm Community Edition 2020.2.3/bin:.:/c/Users/Jacky/AppData/Roaming/npm:/c/Program Files/JetBrains/IntelliJ IDEA 2021.1.1/bin:.:/c/Program Files/LLVM/bin:/c/Users/Jacky/.dotnet/tools
 # environment
@@ -89,7 +88,7 @@ INTELLIJ IDEA = C:\Program Files\JetBrains\IntelliJ IDEA 2021.1.1\bin;
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_72320_TVJILVQTFXYEOFTL
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_68172_PERRQJSZOOKJUHOA
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -195,13 +194,11 @@ PROCESSOR_LEVEL = 6
 # environment
 TERM = cygwin
 # environment
-FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
-# environment
-VSCODE_PID = 72320
+VSCODE_PID = 68172
 # environment
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-N1GBH82
 # variable set hash-table stats:
-# Load=93/1024=9%, Rehash=0, Collisions=9/115=8%
+# Load=91/1024=9%, Rehash=0, Collisions=9/113=8%
 
 # Pattern-specific Variable Values
 
@@ -209,9 +206,9 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-N1GBH82
 
 # Directories
 
-# . (device -8660, inode 61529665): 26 files, no impossibilities.
+# . (device -8660, inode 61529665): 31 files, no impossibilities.
 
-# 26 files, no impossibilities in 1 directories.
+# 31 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -233,9 +230,11 @@ all: helloWord
 #  Modification time never checked.
 #  File has not been updated.
 
+ 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2021-05-20 20:08:41
 #  File has been updated.
 #  Successfully updated.
@@ -259,6 +258,7 @@ helloWord.o: helloWord.c
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 #  commands to execute (from `Makefile', line 6):
+ 
 	@$(CC) -o helloWord.o -c helloWord.c	 	
 	
 
@@ -285,6 +285,7 @@ helloWord.c:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # files hash-table stats:
+ 
 # Load=8/1024=1%, Rehash=0, Collisions=1/23=4%
 # VPATH Search Paths
 
@@ -297,6 +298,6 @@ helloWord.c:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Fri May 28 23:21:06 2021
+# Finished Make data base on Tue Jun  1 06:09:50 2021
 
  
