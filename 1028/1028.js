@@ -23,6 +23,7 @@
      return transTree(traversal,0)
 };
 
+
 function transTree(str,depth){
     
     console.log(`[str,depth] : [${str},${depth}]`)
@@ -30,6 +31,7 @@ function transTree(str,depth){
     var leftStartIndex =-1 ;
     var rightStartIndex =-1 ;
     var isLeft = true;
+
 
     let match = "";
     for(let i = 0; i < depth + 1; i++) {
@@ -83,6 +85,7 @@ function transTree(str,depth){
 //
 //Input: traversal = "1-401--349---90--88"
 //Output: [1,401,null,349,88,90]
+
 
 var traversal = "1-401--349---90--88"
 
