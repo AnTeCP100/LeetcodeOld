@@ -1,6 +1,9 @@
 {
+    
     "files.associations": {
         "method.h": "c",
         "stdio.h": "c"
-    }
+    },
+    "search.useGlobalIgnoreFiles": true,
+    "code-runner.ignoreSelection": true
 }
