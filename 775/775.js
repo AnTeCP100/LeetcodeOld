@@ -12,47 +12,11 @@
  * @param {number[]} nums
  * @return {boolean}
  */
- var isIdealPermutation=function(nums) {
-    var reverseNums = nums.reverse();
-    return seefor(reverseNums);
-}
-
-function seefor(revNms) {
-     var res = false;
-     var max = Math.max(...revNms)
-     var min = Math.min(...revNms)
-     var maxIdx = revNms.indexOf(max)
-     var mimIdx = revNms.indexOf(min)
-     /*last one is the largest */
-     if(maxIdx == 0){
-        var transArr = revNms.slice(1,revNms.length)
-        console.log(transArr);
-        if(transArr.length==1){
-            return true;
-        }
-        res=seefor(transArr)
-     }
-     else if(maxIdx == 1){
-        if(revNms.length==2){
-            return true;
-        }
-        var lastNum = revNms[0]
-        var transArr = revNms.slice(2,revNms.length)
-        
-        
-        var comapareVal = transArr.length>1?Math.max(...transArr):transArr[0]
-        if(lastNum<comapareVal&&comapareVal!=max){
-
-            return false;
-        }
-        if(revNms.length==1){
-            return true;
-        }
-        res =seefor(transArr)
-     }
-     return res;
- };
-
+ var isIdealPermutation = function(A) {
+    for (let i = 0; i < A.length; i++)
+        if (i - A[i] > 1 || i - A[i] < -1) return false
+    return true
+};
 /*
 Input: nums = [1,0,2]
 Output: true
@@ -64,3 +28,6 @@ Explanation: There are 2 global inversions and 1 local inversion.
 */
 nums = [0,2,1];
 console.log(isIdealPermutation(nums));
+
+//Runtime: 96 ms, faster than 75.00% of JavaScript online submissions for Global and Local Inversions.
+//Memory Usage: 49.3 MB, less than 12.50% of JavaScript online submissions for Global and Local Inversions.

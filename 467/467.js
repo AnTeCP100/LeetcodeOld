@@ -5,35 +5,28 @@
  var findSubstringInWraproundString = function(p) {
      /* asc2 a to z is 97~122*/
     /*fromCharCode and charCodeAt*/
-    var nowLen = 1;
-    var fin = [];
-    var retval = 0;
-    var nowCode,nextCode;
-    for(var i =p.length-1;i>=0;i--){
-        if(fin.includes(p[i])){
-            continue;
-        }
-        nowLen=1;
-        nowCode = p[i].charCodeAt();
-        
-        while(true){
-            nextCode = (nowCode-1)<97?122:nowCode-1;
-            var newChar = String.fromCharCode(nextCode);
-            if(p.includes(newChar))
-            {
-                if(p.indexOf(newChar)>i){
-                    break;
-                }
-                nowLen++;
-            }else{
-                break;
-            }
+    /*
+    !substring need to togeher 
+    */
+    var pSplit = p.split('')
+    var pN = pSplit.map(x=>x.charCodeAt())
+    var pLen = pN.length;
+    var map = [];
+    var nowLen = 0;
+    for(var i =0;i<pLen;i++){
+        if(i>0&&(pN[i]-pN[i-1]==1||pN[i-1]-pN[i]==25)){
+            nowLen++;
+        }else{
+            nowLen=1;
         }
 
-        fin.push(p[i]);
-        retval+=nowLen
+        if(map[pN[i]]==null){
+            map[pN[i]] = nowLen;
+        }else{
+            map[pN[i]]=Math.max(map[pN[i]],nowLen)
+        }
     }
-    return retval;
+    return map.reduce((x,y)=>x+y);
 };
 
 
@@ -55,5 +48,9 @@
 //Output: 6
 //Explanation: There are six substrings ("z", "a", "b", "za", "ab", and "zab") of p in s.
 
-var s= "cac"
+var s= "zab"
 console.log(findSubstringInWraproundString(s))
+
+
+//Runtime: 76 ms, faster than 90.91% of JavaScript online submissions for Unique Substrings in Wraparound String.
+//Memory Usage: 42.3 MB, less than 18.18% of JavaScript online submissions for Unique Substrings in Wraparound String.
