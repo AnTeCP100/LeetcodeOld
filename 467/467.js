@@ -3,19 +3,40 @@
  * @return {number}
  */
  var findSubstringInWraproundString = function(p) {
-    let len = p.length;
-    var map = [];
-    var retVal = 0;
-    for(var i = len-1;len>=0;i++){
-        var checkPoint = p.indexOf(p[i]);
-        console.log(checkPoint);
-        var offset = i-checkPoint;
-        if(offset==0){
-            retVal+=i+1;
+     /* asc2 a to z is 97~122*/
+    /*fromCharCode and charCodeAt*/
+    var nowLen = 1;
+    var fin = [];
+    var retval = 0;
+    var nowCode,nextCode;
+    for(var i =p.length-1;i>=0;i--){
+        if(fin.includes(p[i])){
+            continue;
         }
+        nowLen=1;
+        nowCode = p[i].charCodeAt();
         
+        while(true){
+            nextCode = (nowCode-1)<97?122:nowCode-1;
+            var newChar = String.fromCharCode(nextCode);
+            if(p.includes(newChar))
+            {
+                if(p.indexOf(newChar)>i){
+                    break;
+                }
+                nowLen++;
+            }else{
+                break;
+            }
+        }
+
+        fin.push(p[i]);
+        retval+=nowLen
     }
+    return retval;
 };
+
+
 
 
 
