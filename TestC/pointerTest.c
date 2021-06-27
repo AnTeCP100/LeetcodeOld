@@ -3,16 +3,18 @@
 #include <string.h>
 
 int main(){
-    int a = 8;
-    int *p;
-    //p= malloc(1*sizeof(int));
+    char a[] = "12345678";
+    char *p= "12345679";
+    char *d;
+    d= malloc((8+1)*sizeof(char));
     //p=&a;
-    p=&a;
-    *p = 6;
-    printf("%p\n",p);
-    printf("%d\n",*p);
-    printf("%p\n",&p);
-    printf("%d\n",a);
-
+    memcpy(d,p,8+1);
+    d[2] ='4';
+    //printf("%s\n",*p);
+    //printf("%s\n",*d);
+    printf("%c\n",a[0]);
+    printf("%s\n",a);
+    printf("%s\n",p);
+    printf("%s\n",d);
     return 0;
 }
