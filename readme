@@ -1,11 +1,13 @@
 Leetcode :
 -------------------------------------------------------
-eazy, medium, hard : 4, 16, 8
+eazy, medium, hard : 5, 16, 8
 -------------------------------------------------------
 number |  level  | c | js | notion | Date 
 32     |  Hard   |   |    |        | 21/6/5   
 51     |  Hard   |   |    |        |          Skip(Can not figure out) 
+100    |  easy   |   |  o |        | 21/9/8 
 135    |  Hard   |   |    |        | 21/6/28
+141    |  easy   |   |  o |        | 21/9/8 
 357    | medium  |   |  o |        | 21/6/3 
 402    | medium  |   |  o |        | 21/6/23 
 429    | medium  |   |  o |        | 21/6/6  
@@ -16,7 +18,7 @@ number |  level  | c | js | notion | Date
 654    | medium  |   |  o |        | 21/6/22
 658    | medium  |   |  o |        | 21/6/22
 718    |         | o |    |        |
-724    |  eazy   |   |  o |        | 21/6/2 
+724    |  easy   |   |  o |        | 21/6/2 
 775    | medium  |   |  o |        | 21/6/16
 788    |         | o |    |        |  
 860    |         | o |    |        |  
@@ -26,7 +28,7 @@ number |  level  | c | js | notion | Date
 954    | medium  |   |  o |        | 21/5/29 
 998    | medium  |   |  o |        | 21/6/22
 1020   | medium  |   |  o |        | 21/6/8 
-1025   |  eazy   |   |  o |        | 21/6/2 
+1025   |  easy   |   |  o |        | 21/6/2 
 1028   | medium  |   |  o |        | 21/6/1 
 1092   |  Hard   |   |    |        | 21/6/11      
 1124   | medium  |   |  o |        | 21/5/30
@@ -35,9 +37,9 @@ number |  level  | c | js | notion | Date
 1360   |         | o |    |        |
 1383   |  Hard   |   |    |        | 21/6/6  
 1414   | medium  |   |  o |        | 21/6/28
-1582   |  eazy   |   |  o |        | 21/6/27 
-1588   |  eazy   |   |  o |        | 21/6/28 
-1640   |  eazy   |   |  o |        | 21/6/5 
+1582   |  easy   |   |  o |        | 21/6/27 
+1588   |  easy   |   |  o |        | 21/6/28 
+1640   |  easy   |   |  o |        | 21/6/5 
 1683   |         | o |    |        |
 1722   |         | o |    |        |
 1745   |  Hard   |   |  o |        | 21/6/18
