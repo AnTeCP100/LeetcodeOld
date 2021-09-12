@@ -1,13 +1,15 @@
 Leetcode :
 -------------------------------------------------------
-eazy, medium, hard : 5, 16, 8
+eazy, medium, hard : 7, 19, 8
 -------------------------------------------------------
 number |  level  | c | js | notion | Date 
 32     |  Hard   |   |    |        | 21/6/5   
 51     |  Hard   |   |    |        |          Skip(Can not figure out) 
 100    |  easy   |   |  o |        | 21/9/8 
 135    |  Hard   |   |    |        | 21/6/28
+289    | medium  |   |  o |        | 21/9/12 
 141    |  easy   |   |  o |        | 21/9/8 
+275	   | medium  |   |  o |        | 21/9/12 
 357    | medium  |   |  o |        | 21/6/3 
 402    | medium  |   |  o |        | 21/6/23 
 429    | medium  |   |  o |        | 21/6/6  
@@ -21,6 +23,7 @@ number |  level  | c | js | notion | Date
 724    |  easy   |   |  o |        | 21/6/2 
 775    | medium  |   |  o |        | 21/6/16
 788    |         | o |    |        |  
+832    |  easy   |   |  o |        | 21/9/12 
 860    |         | o |    |        |  
 875    | medium  |   |  o |        | 21/6/27
 893    |         |   |  o |        |  
