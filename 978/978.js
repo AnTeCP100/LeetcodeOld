@@ -3,61 +3,66 @@
  * @return {number}
  */
  var maxTurbulenceSize = function(arr) {
-    var retval = 2 ,nowret = 2, reverse=true,preval = arr[1];
-    if(arr.length==1) return 1;
-    if(arr[0]>arr[1]) reverse = false;
-    else if(arr[0]==arr[1]) retval =1;
+    var nextType = true;
+    var retval = 1 ,nowRetval = 0,oldRetval = 1;
 
-    for(var count= 2 ;count <arr.length;count++)
+
+    if(arr.length==1) return arr.length;
+    
+    for(var pos = 0;pos<arr.length;pos++)
     {
-        console.log(reverse,count,arr[count],nowret)
-        if(reverse)
+        if(nowRetval != 0)
         {
-            if(arr[count]<preval)
+            if(arr[pos+1]>arr[pos]&&nextType || arr[pos+1]<arr[pos]&&!nextType)
             {
-                nowret+=1   
-                reverse = !reverse;            
-            }else{
-                if(nowret>retval)
-                {
-                    retval = nowret;
-                    //double check remaing
-                    if(retval>(arr.length-1-count))  break;
-                }
+                nowRetval+=1;
+                nextType = !nextType;
+            } 
+            else 
+            {
                 
-                if(preval==arr[count])
+                retval = Math.max(retval,nowRetval);
+                nowRetval = 0;
+                if(retval>arr.length-1-pos)
                 {
-                    nowret =1;  
-                }else{
-                    nowret =2;  
+                    break;
                 }
-                   
-            }
-        }else
-        {
-            if(arr[count]>preval)
-            {
-                nowret+=1  
-                reverse = !reverse;             
-            }else{
-                if(nowret>retval)
-                {
-                    retval = nowret;
-                    //double check remaing
-                    if(retval>(arr.length-1-count))  break;
-                } 
-                if(preval==arr[count])
-                {
-                    nowret =1;  
-                }else{
-                    nowret =2;  
-                }     
             }
         }
-        preval = arr[count];  
+
+
+        if(nowRetval == 0)
+        {
+            if(arr[pos+1]>arr[pos]) nextType=false, nowRetval+=2;
+            if(arr[pos+1]<arr[pos]) nextType=true, nowRetval+=2; 
+        }
+    }
+
+    return Math.max(retval,nowRetval);
+};
+
+/**
+ * @param {number[]} arr
+ * @return {number}
+ */
+ var maxTurbulenceSize_1 = function(arr) {
+    var retval = 1 ,nowOdd = 1,nowEven=1;
+    for(var pos = 0;pos<arr.length;pos++)
+    {
+        if(pos%2)// success or fail
+        { 
+            nowOdd = (arr[pos] > arr[pos + 1]) ? nowOdd + 1 : 1;
+            nowEven = (arr[pos] < arr[pos + 1]) ? nowEven + 1 : 1;
+        }
+        else { 
+            nowEven = (arr[pos] > arr[pos + 1]) ? nowEven + 1 : 1;
+            nowOdd = (arr[pos] < arr[pos + 1]) ? nowOdd + 1 : 1;
+        }
+        retval = Math.max(retval,nowEven,nowOdd);
         
     }
-    return retval>nowret?retval:nowret;
+
+    return retval;
 };
 
 
@@ -74,5 +79,12 @@
 //Input: arr = [100]
 //Output: 1
  
-var arr = [0,8,45,88,48,68,28,55,17,24]
+var arr = [9,9]
 console.log(maxTurbulenceSize(arr))
+
+
+//Runtime: 104 ms, faster than 32.26% of JavaScript online submissions for Longest Turbulent Subarray.
+//Memory Usage: 44.6 MB, less than 80.65% of JavaScript online submissions for Longest Turbulent Subarray.
+
+//Runtime: 152 ms, faster than 12.90% of JavaScript online submissions for Longest Turbulent Subarray.
+//Memory Usage: 44.6 MB, less than 80.65% of JavaScript online submissions for Longest Turbulent Subarray.
