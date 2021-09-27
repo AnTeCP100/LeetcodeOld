@@ -3,6 +3,8 @@
  * @param {number} target
  * @return {number[][]}
  */
+
+
  var combinationSum = function(candidates, target) {
     
     var retList = [];
@@ -39,6 +41,39 @@
     
 };
 
+
+/**
+ * @param {number[]} candidates
+ * @param {number} target
+ * @return {number[][]}
+ */
+ var combinationSum_2 = function(candidates, target) {
+    var dp = [];
+    dp.length = target+1;
+    candidates.sort();
+    var len = candidates.length;
+    for(var i =0;i<len;i++)
+    {
+        for(var j = candidates[i];j<target+1;j++)
+        {
+            if(j==candidates[i])
+            {
+                dp[j].push([candidates[i]])
+            }
+            else
+            {
+                if(dp[j-can[i]])
+                {
+                    for(var u in dp[j-candidates[i]])
+                    {
+                        dp[j].push(u+[candidates[i]])
+                    }
+                }
+            }
+        }
+    }
+    console.log(dp);
+};
 //Example 1:
 //Input: candidates = [2,3,6,7], target = 7
 //Output: [[2,2,3],[7]]
