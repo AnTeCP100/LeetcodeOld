@@ -7,10 +7,12 @@
     var temp =[],retval = [];
     for(var pos=0;pos<copyArr.length;pos++)
     {
+        //# right>0; left<0
         if(copyArr[pos]>0)
             temp.push(copyArr[pos]);
         else
         {
+            //comparing with every elements in the temp, if the temp is empty, put the now value to the result
             while(true)
             {
                 if(temp.length==0)
@@ -38,6 +40,7 @@
             }
         } 
     }
+    //trur result = retval + now temp
     return retval.concat(temp);
 };
 
