@@ -1,10 +1,12 @@
 Leetcode :
 -------------------------------------------------------
 number |  level  | js | Date 
-32     |  Hard   |    | 21/6/5   
+32     |  Hard   |    | 21/6/5  
+33     | medium  |  o | 21/10/8
 39     | medium  |  o | 21/9/14 
 51     |  Hard   |    |          Skip(Can not figure out) 
-53     | medium  |  o | 21/9/27         
+53     | medium  |  o | 21/9/27 
+63     | medium  |  o | 21/10/8        
 79     | medium  |  o | 21/9/27  
 79     | medium  |  o | 21/10/6 
 100    |  easy   |  o | 21/9/8 
