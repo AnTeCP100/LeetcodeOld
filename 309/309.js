@@ -2,6 +2,17 @@
  * @param {number[]} prices
  * @return {number}
  */
+
+//There are some doubts about the problem, so i try some awsner
+// 1. can sell first?
+// => [2,1] = 0 , so can not sell first
+// 2. cooldown limit?
+// => no limit
+
+//f(n) = f(n-1) or  y(n-2)-now
+//y(n) = y(n-1) or f(n-1)+now
+
+
  var maxProfit = function(prices) {
     if(prices.Length == 0) {
         return 0;
@@ -78,8 +89,3 @@ console.log(maxProfit(p))
 
 
 
-//There are some doubts about the problem, so i try some awsner
-// 1. can sell first?
-// => [2,1] = 0 , so can not sell first
-// 2. cooldown limit?
-// => no limit

@@ -2,6 +2,8 @@
  * @param {number[]} nums
  * @return {number}
  */
+
+
  var triangleNumber = function(nums) {
     var retval=0;
     var leftPos,rightPos;
@@ -19,7 +21,7 @@
             //triangle condition
             if(nums[leftPos]+nums[rightPos]>nums[pos])
             {
-                //biiger thar left position with the now right position is always true ,so add to result
+                //bigger than left position with the now right position is always true ,then add them to result
                 retval+=(rightPos-leftPos)
                 
                 //offset
