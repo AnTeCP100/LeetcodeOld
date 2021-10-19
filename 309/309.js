@@ -88,4 +88,40 @@ console.log(maxProfit(p))
 //Time Limit Exceeded
 
 
+/**
+ * @param {number[]} prices
+ * @return {number}
+ */
+//alway choose the larges, then the answer is the largest
+ var maxProfit_fast = function(prices) {
+    //three status
+    var len = prices.length-1;
+    var preFstBuyVal = -prices[0];
+    var preFstSellVal = 0;
+    var preFstCoolVal = 0;
+
+    //caculate every value(dp)
+    for(var pos = 1;pos<=len;pos++)
+    {
+        //now first buy value
+        //var nowFstBuyVal = Math.max(preFstBuyVal,preFstCoolVal-prices[pos],preFstSellVal) -> wrong ,because u can not buy after sell
+        var nowFstBuyVal = Math.max(preFstBuyVal,preFstCoolVal-prices[pos])
+
+       //now first sell value
+       //var nowFstSellVal = Math.max(preFstSellVal,preFstBuyVal+prices[pos],preFstCoolVal)
+       //??????????????????????????????????????????????????????????????????????????
+       var nowFstSellVal = Math.max(preFstSellVal,preFstBuyVal+prices[pos])
+
+       //now first cool value
+       //var nowFstCoolDown = Math.max(preFstBuyVal,preFstCoolVal,preFstBuyVal)
+       //preFstBuyVal never large than preFstSellVal or preFstCoolVal
+       var nowFstCoolDown = Math.max(preFstSellVal,preFstCoolVal)
+
+       preFstBuyVal=nowFstBuyVal;
+       preFstSellVal=nowFstSellVal;
+       preFstCoolVal=nowFstCoolDown;
+    }
+
+    return preFstSellVal;
+}
 
