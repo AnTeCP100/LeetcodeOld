@@ -7,18 +7,21 @@
     var len = nums.length-1;
     var retval = nums[0]
     var nowIdx = 1;
+
+    // nums length = 1 always true;
     if(len<1)
         return 1;
-        
-        
     
-    //compare every elements in nums find the max one
+    //compare every elements in nums 
+    //nowIdx : now index, retval : next jump index
     while(nowIdx <= retval && nowIdx <= len)
     {
+        //console.log(len,retval,nowIdx)
+        
+        //compare next position
         retval = Math.max(retval,nowIdx+nums[nowIdx])
         nowIdx++;
     }
-
     return retval>=len?1:0  
 };
 
@@ -30,5 +33,5 @@ var nums = [3,2,1,0,4]
 console.log(canJump(nums))
 
 
-//Runtime: 956 ms, faster than 18.68% of JavaScript online submissions for Jump Game.
-//Memory Usage: 51.2 MB, less than 5.04% of JavaScript online submissions for Jump Game.
+//Runtime: 96 ms, faster than 60.91% of JavaScript online submissions for Jump Game.
+//Memory Usage: 42.3 MB, less than 98.36% of JavaScript online submissions for Jump Game.
