@@ -25,7 +25,7 @@
 
     for(var nums2_pos = 1 ;nums2_pos<=nums2.length;nums2_pos++)
     {
-        //init dp array
+        //init the new one dp line
         var sm_dp = []
         sm_dp.length=nums1.length+1;
         sm_dp.fill(0);
@@ -33,14 +33,16 @@
         //compare with nums1 
         for(var nums1_pos = 1 ;nums1_pos<=nums1.length;nums1_pos++)
         {
-            //find the equal
+            //check if nums2 and nums1 is equal
             if(nums2[nums2_pos-1]==nums1[nums1_pos-1])
             {
-                //use dp[x-1][y-1] and cmp with math
+                //use dp[x-1][y-1] and compare with ret
                 sm_dp[nums1_pos]=dp[nums2_pos-1][nums1_pos-1]+1
                 ret=Math.max(sm_dp[nums1_pos],ret)
             }
         }
+
+        //input to dp array
         dp.push(sm_dp);
     }
     return ret;
