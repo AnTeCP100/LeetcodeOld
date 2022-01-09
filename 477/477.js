@@ -95,6 +95,30 @@ var totalHammingDistance_fail = function(nums) {
     })
     return ret
 };
+var totalHammingDistance= function(nums)
+{
+    var ret =0;
+    for(var cur_pos = 0;cur_pos<nums.length-1;cur_pos++)
+    {
+        var k = Math.abs(nums[cur_pos]-nums[cur_pos+1])
+
+        //transferm and add to ret 
+        k.toString(2).split("").forEach(element=>{
+            ret+=parseInt(element);
+        })
+    }
+    
+    //count the last
+    if(nums.length>2)
+    {
+        var s = Math.abs(nums[nums.length-1]-nums[0])
+        s.toString(2).split("").forEach(element=>{
+            ret+=parseInt(element);
+        })
+    }
+
+    return ret;
+}
 
 
 var nums = [4,14,2]
