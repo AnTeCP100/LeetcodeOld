@@ -9,7 +9,7 @@
     
     var nums_map = new Map()
 
-    //making map to record every element count map
+    //making map to record every element count
     nums.forEach(element => {
         var count = 0;
         if(nums_map.has(element)) 
