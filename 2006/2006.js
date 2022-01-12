@@ -8,8 +8,6 @@
     var ret = 0;
     
     var nums_map = new Map()
-    var nums_map_lock_p = []
-    var nums_map_lock_n = []
 
     //making map to record every element count map
     nums.forEach(element => {
