@@ -34,6 +34,8 @@
         //convert now value 
         node.val+=now_sum;
         now_sum = node.val;
+
+        //go to the left
         convert_func(node.left)
     }
 
