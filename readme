@@ -1,48 +1,50 @@
 Leetcode :
 -------------------------------------------------------
 number |  level  | js | Date 
-32     |  Hard   |    | 21/6/5  
-33     | medium  |  o | 21/10/8
-39     | medium  |  o | 21/9/14 
-49     | medium  |  o | 21/10/19 
-51     |  Hard   |    |          Skip(Can not figure out) 
-53     | medium  |  o | 21/9/27 
-63     | medium  |  o | 21/10/8        
-79     | medium  |  o | 21/9/27  
-79     | medium  |  o | 21/10/6 
-100    |  easy   |  o | 21/9/8 
-104    |  easy   |  o | 21/9/29 
-135    |  Hard   |    | 21/6/28
-230    | medium  |  o | 21/9/27 
-289    | medium  |  o | 21/9/12 
-309    | medium  |  o | 21/10/15
-141    |  easy   |  o | 21/9/8 
-232    |  easy   |  o | 21/9/30
-275	   | medium  |  o | 21/9/12 
-357    | medium  |  o | 21/6/3 
-402    | medium  |  o | 21/6/23 
-429    | medium  |  o | 21/6/6  
-467    | medium  |  o | 21/6/16     
-470    | medium  |  o | 21/6/15
-543    | medium  |  o | 21/9/27
-611    | medium  |  o | 21/10/15
-623    | medium  |  o | 21/6/15
-646    | medium  |  o | 21/5/31
-654    | medium  |  o | 21/6/22
-658    | medium  |  o | 21/6/22
-718    |         |    |
-724    |  easy   |  o | 21/6/2 
-735	   | medium  |  o | 21/9/27 
-775    | medium  |  o | 21/6/16
-788    |         |    |  
-832    |  easy   |  o | 21/9/12 
-860    |         |    |  
-875    | medium  |  o | 21/6/27
-893    |         |  o |  
-902    |         |    |
-931    | medium  |  o | 21/9/16
-954    | medium  |  o | 21/5/29 
-998    | medium  |  o | 21/6/22
+0011   | medium  |  o | 22/01/19
+0032   |  Hard   |    | 21/6/5  
+0033   | medium  |  o | 21/10/8
+0039   | medium  |  o | 21/9/14 
+0049   | medium  |  o | 21/10/19 
+0051   |  Hard   |    |          Skip(Can not figure out) 
+0053   | medium  |  o | 21/9/27 
+0063   | medium  |  o | 21/10/8        
+0079   | medium  |  o | 21/9/27  
+0079   | medium  |  o | 21/10/6 
+0100   |  easy   |  o | 21/9/8 
+0104   |  easy   |  o | 21/9/29 
+0135   |  Hard   |    | 21/6/28
+0230   | medium  |  o | 21/9/27 
+0289   | medium  |  o | 21/9/12 
+0309   | medium  |  o | 21/10/15
+0141   |  easy   |  o | 21/9/8 
+0232   |  easy   |  o | 21/9/30
+0275   | medium  |  o | 21/9/12 
+0357   | medium  |  o | 21/6/3 
+0402   | medium  |  o | 21/6/23 
+0429   | medium  |  o | 21/6/6  
+0467   | medium  |  o | 21/6/16     
+0470   | medium  |  o | 21/6/15
+0538   | medium  |  o | 22/01/14
+0543   | medium  |  o | 21/9/27
+0611   | medium  |  o | 21/10/15
+0623   | medium  |  o | 21/6/15
+0646   | medium  |  o | 21/5/31
+0654   | medium  |  o | 21/6/22
+0658   | medium  |  o | 21/6/22
+0718   |         |    |
+0724   |  easy   |  o | 21/6/2 
+0735   | medium  |  o | 21/9/27 
+0775   | medium  |  o | 21/6/16
+0788   |         |    |  
+0832   |  easy   |  o | 21/9/12 
+0860   |         |    |  
+0875   | medium  |  o | 21/6/27
+0893   |         |  o |  
+0902   |         |    |
+0931   | medium  |  o | 21/9/16
+0954   | medium  |  o | 21/5/29 
+0998   | medium  |  o | 21/6/22
 1020   | medium  |  o | 21/6/8 
 1025   |  easy   |  o | 21/6/2 
 1028   | medium  |  o | 21/6/1 
