@@ -13,16 +13,16 @@
 
     while(left_idx<right_idx)
     {        
-        //find the now base number
+        //find the current base number
         var base = Math.min(height[left_idx],height[right_idx])
 
-        //calculate area
+        //calculate the area
         var cur_area = base*(right_idx-left_idx)
 
         //update the result
         ret = Math.max(cur_area, ret)
 
-        //move location
+        //move left or right position
         if(height[left_idx]<height[right_idx])
             left_idx++
         else
