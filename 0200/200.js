@@ -8,10 +8,14 @@
     
     //dfs
     var loop_func = function(x,y){
-        if(x<0 || y<0 || x>=x_len || y>=y_len || grid[x][y]=='0'){
+        
+        if(x<0 || y<0 || x>=x_len || y>=y_len || grid[x][y]=='0')
             return;
-        }
+        
+        //avoid double counting
         grid[x][y]='0';
+
+        //up down left right
         loop_func(x,y+1);
         loop_func(x+1,y);
         loop_func(x,y-1);
