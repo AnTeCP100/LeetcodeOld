@@ -26,17 +26,17 @@ public:
         }
         
         Node *newHead = map[head];
-        Node *current = newHead;
+        Node *curNode = newHead;
         tmp = head;
         while(tmp != NULL) {
             if(tmp->next != NULL) {
-                current->next = map[tmp->next];
+                curNode->next = map[tmp->next];
             }
             if(tmp->random != NULL) {
-                current->random = map[tmp->random];
+                curNode->random = map[tmp->random];
             }
             tmp = tmp->next;
-            current = current->next;
+            curNode = curNode->next;
         }
         
         return newHead;
