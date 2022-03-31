@@ -19,12 +19,14 @@ public:
     Node* copyRandomList(Node* head) {
         map<Node*, Node*> map;
         
+        //copy value for new node
         Node *tmp = head;
         while(tmp != NULL) {
             map[tmp] = new Node(tmp->val);
             tmp = tmp->next;
         }
         
+        //copy pointer
         Node *newHead = map[head];
         Node *curNode = newHead;
         tmp = head;
