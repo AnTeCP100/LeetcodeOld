@@ -25,7 +25,7 @@ public:
         //check now pos and go to next floor
         for(int i = 0;i<3;i++)
         {
-            //aleady find the awnser
+            //aleady find the target
             if(findIt)
                 break; 
 
@@ -37,7 +37,7 @@ public:
                 //go to the next floor
                 backTraceFunc(vec, idx+1);
                 
-                //check find it
+                //find the target
                 if(nowTarget == 0)
                 {
                     findIt = true;
@@ -57,7 +57,7 @@ public:
         //char *arr = (char*)malloc(sizeof(char)*(n));
         backTraceFunc(vec,0);
 
-        //check find it
+        //check if find the target
         if(findIt){
             string str(vec.begin(), vec.end());
             return str;
