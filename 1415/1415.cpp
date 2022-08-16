@@ -41,6 +41,7 @@ public:
                 if(nowTarget == 0)
                 {
                     findIt = true;
+                    return;
                 }else
                 {
                     vec.pop_back();
