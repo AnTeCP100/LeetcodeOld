@@ -7,12 +7,17 @@ public :
 public:
     vector<vector<int>> ret;
 void method(int floor,TreeNode* node){
+    //check the next floor
     if(ret.size()<(floor+1))
     {
         vector<int> nodeRet;
         ret.push_back(nodeRet);
     }
+
+    //insert to result
     ret[floor].insert(ret[floor].begin(),node->val);
+
+    //go to the next
     if(node->right != NULL)
     {
         method(floor+1,node->right);
@@ -27,6 +32,8 @@ vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
     {
          method(0,root);
     }
+
+    //sort
     for(int i = 1; i<ret.size();i+=2)
     {
         reverse(ret[i].begin(), ret[i].end());
